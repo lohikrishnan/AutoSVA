@@ -355,7 +355,7 @@ def get_sizes(prop):
                     q_signal_name = entry["q"] + "_" + q_trans_id
                     if (verbose):  print("GS p: " + p_signal_name + ", q: " + q_signal_name);
                     #check that signals exist in signal dict
-                    if check_signal(p_signal_name, signals) or check_signal(q_signal_name, `signals`):
+                    if check_signal(p_signal_name, signals) or check_signal(q_signal_name, 'signals'):
                         abort_tool(prop)
                     #get the size of p and q trans_id from signals dict
                     size_p = signals[p_signal_name]["size"]
